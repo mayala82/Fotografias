@@ -1,5 +1,6 @@
 @font-face {
-  src: url(./Fuentes/DancingScript.ttf);
+  font-family: DancingScript;
+  src: url(../Fuentes/DancingScript.ttf);
 }
 body{
   background-color: #02010a;
@@ -8,18 +9,20 @@ body{
 #contenido{
   width: 900px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 header{
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
-  padding-left: 20px;
-  font-family: 'Dancing Script', cursive;
+  font-family: DancingScript;
   color: white;
   display: flex;
   flex-flow: row;
   width: 100%;
 }
 #titulo{
+  margin-left: 20px;
   float: left;
   width: 60%;
 }
@@ -48,4 +51,15 @@ nav{
 .menu>li>a:hover{
   color: black;
   text-decoration: underline;
+}
+.principal{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #82c3a6;
+  text-align: center;
+}
+.principal>img{
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
