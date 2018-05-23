@@ -1,0 +1,51 @@
+@font-face {
+  src: url(./Fuentes/DancingScript.ttf);
+}
+body{
+  background-color: #02010a;
+
+}
+#contenido{
+  width: 900px;
+  margin: 0 auto;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  padding-left: 20px;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+}
+#titulo{
+  float: left;
+  width: 60%;
+}
+#titulo>h1{
+  text-shadow: 2px 2px #02010a;
+}
+nav{
+    width: 40%;
+    float: right;
+    padding-left: 10px;
+}
+.menu{
+  list-style-type: none;
+  text-align: center;
+  padding-top: 10px;
+}
+.menu>li{
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.menu>li>a{
+  text-decoration: none;
+  color: white;
+}
+.menu>li>a:hover{
+  color: black;
+  text-decoration: underline;
+}
