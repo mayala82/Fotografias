@@ -7,6 +7,7 @@ body{
   font-family: DancingScript;
 }
 header{
+  width: 100%;
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
   color: white;
@@ -34,7 +35,16 @@ footer{
   color: black;
   text-decoration: underline;
 }
+.galeria{
+  width: 100%;
+  margin:0 auto;
+  background-color: #d5c75f;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .menu>li>a:visited{}
+/*Estilo para PC*/
 @media screen and (min-width:960px){
   #contenido{
     width: 900px;
@@ -45,7 +55,7 @@ footer{
   header{
     display: flex;
     flex-flow: row;
-    width: 100%;
+
   }
   #titulo{
     margin-left: 20px;
@@ -92,8 +102,19 @@ footer{
     margin-bottom: 20px;
     text-align: center;
   }
+  .galeria{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .galeria>div{
+    width: 33.33%
+  }
   .adaptativa_2{
     width: 80%;
+  }
+  .adaptativa_3{
+    width: 80%;
+    margin: 20px;
   }
   footer{
     display: flex;
@@ -130,7 +151,6 @@ footer{
     margin: 0 auto;
   }
   header{
-    width: 100%;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -147,6 +167,13 @@ footer{
     margin: 0 auto;
     background-color: #d5c75f;
     border: 1px;
+  }
+  .galeria>div{
+    width: 100%
+  }
+  .adaptativa_3{
+    width: 80%;
+    margin: 20px;
   }
   #titulo{
     width: 100%;
