@@ -10,6 +10,7 @@ header{
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
   color: white;
+  animation: Entrada 1s;
 }
 footer{
   width: 100%;
@@ -209,7 +210,21 @@ footer{
 }
 #img2:hover{
   transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
 }
 #img3:hover{
   transform: translate(-5px,20px);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+@-webkit-keyframes Entrada{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
