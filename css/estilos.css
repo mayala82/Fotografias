@@ -43,6 +43,18 @@ footer{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#foto_1>img{
+  -webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+#foto_3>img{
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
+.galeria_pares {
+  -webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
 .menu>li>a:visited{}
 /*Estilo para PC*/
 @media screen and (min-width:960px){
@@ -145,6 +157,7 @@ footer{
   }
 
 }
+/*Estilo para dispositivos moviles*/
 @media screen and (max-width:959px){
   #contenido{
     width: 100%;
@@ -243,7 +256,7 @@ footer{
   transform: translate(-5px,20px);
   box-shadow: 2px 2px #82c3a6;
 }
-
+/*Animación al cargar la pagina*/
 @-webkit-keyframes Entrada{
   0%{
     margin-top: 150%;
